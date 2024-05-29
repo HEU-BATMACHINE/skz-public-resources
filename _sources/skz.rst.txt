@@ -1,0 +1,586 @@
+
+===========
+Class Index
+===========
+
+SKZ Terms
+=========
+
+.. raw:: html
+
+   <div id="skz_2da50370_a54d_5165_8244_6477f389f596"></div>
+
+AngularVelocity
+---------------
+
+* https://w3id.org/skz/public/ontology#skz_2da50370_a54d_5165_8244_6477f389f596
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">angular velocity &#952;'(t) (rad/s):is the rate of change of angular deflection of rotating geometry</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_431878b6_4cce_5998_99af_0978f9d13a93"></div>
+
+MeanAreaDiameter
+----------------
+
+* https://w3id.org/skz/public/ontology#skz_431878b6_4cce_5998_99af_0978f9d13a93
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Medium surface weight particle diameter,Mean value of the area distribution</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MA</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Determined from volume distribution assuming spheres</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_b187de82_77e1_53c4_acf6_268de3bbc9ce"></div>
+
+MeanNumberDiameter
+------------------
+
+* https://w3id.org/skz/public/ontology#skz_b187de82_77e1_53c4_acf6_268de3bbc9ce
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Mean Number Diameter,Medium number of weights particle diameter,Mean value of the number distribution</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MN</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Determined from volume distribution assuming spheres</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_6acb304d_62f9_56b8_a39e_5446f68e7184"></div>
+
+MeanVolumeDiameter
+------------------
+
+* https://w3id.org/skz/public/ontology#skz_6acb304d_62f9_56b8_a39e_5446f68e7184
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Mean Volume Diameter,medium volume weight particle diameter,Mean value of volume distribution</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">MV</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">\bar{x}_{r} = \int_{x_{\text{min}}}^{x_{\text{max}}} q_{r}(x) \, x \, dx</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_1601f02c_6573_55ce_b0fb_b12e20997cff"></div>
+
+NormalForce
+-----------
+
+* https://w3id.org/skz/public/ontology#skz_1601f02c_6573_55ce_b0fb_b12e20997cff
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">normal force F (N):with which the upper plate presses on the sample (with this you can also observe shrinkage - negative sign)</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_ff44423a_3ab7_50fe_9316_53b12af02e0c"></div>
+
+ShearGap
+--------
+
+* https://w3id.org/skz/public/ontology#skz_ff44423a_3ab7_50fe_9316_53b12af02e0c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Shear gap g (mm): thickness of the liquid film (distance between two plates)</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_84494825_d879_582e_b1d2_8506e7016a5b"></div>
+
+ShearRate
+---------
+
+* https://w3id.org/skz/public/ontology#skz_84494825_d879_582e_b1d2_8506e7016a5b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">shear rate &#611;&#775; (s&#8315;&#185;):is the rate at which a progressive shear strain is applied to some material, causing shearing to the material.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_e3dd0ad7_bcce_5ad3_aa66_209b8410079d"></div>
+
+ShearStress
+-----------
+
+* https://w3id.org/skz/public/ontology#skz_e3dd0ad7_bcce_5ad3_aa66_209b8410079d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">shear stress &#963; (Pa):is defined as shear force divided by shear surface</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_f7904764_0581_5d50_8848_ee5c141d0659"></div>
+
+SkzTorque
+---------
+
+* https://w3id.org/skz/public/ontology#skz_f7904764_0581_5d50_8848_ee5c141d0659
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Torque &#964; (N&#8729;m)</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_972a0ccc_bbcf_5b5e_af3c_7c58aaaee450"></div>
+
+T
+-
+
+* https://w3id.org/skz/public/ontology#skz_972a0ccc_bbcf_5b5e_af3c_7c58aaaee450
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">time of experiment</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_7acd20d9_f335_5c31_9346_a4df8e455abb"></div>
+
+Temperature
+-----------
+
+* https://w3id.org/skz/public/ontology#skz_7acd20d9_f335_5c31_9346_a4df8e455abb
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">temperature of the system and sample</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_8f82765b_0f13_580c_936d_96154ed4d1c4"></div>
+
+Texp
+----
+
+* https://w3id.org/skz/public/ontology#skz_8f82765b_0f13_580c_936d_96154ed4d1c4
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">total time of experiment (include time for equilibration)</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_86287ab3_5a17_500d_86b7_0625efce90fa"></div>
+
+Viscosity
+---------
+
+* https://w3id.org/skz/public/ontology#skz_86287ab3_5a17_500d_86b7_0625efce90fa
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">viscosity &#951; (Pa&#8729;s):viscosity of a fluid is a measure of its resistance to deformation at a given rate.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_8561dd93_b147_54a1_9d1c_11348a1b6e12"></div>
+
+d10
+---
+
+* https://w3id.org/skz/public/ontology#skz_8561dd93_b147_54a1_9d1c_11348a1b6e12
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 10% of the particle volume and 90% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_48015d58_b198_537a_99b2_36d69a79b1e6"></div>
+
+d20
+---
+
+* https://w3id.org/skz/public/ontology#skz_48015d58_b198_537a_99b2_36d69a79b1e6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 20% of the particle volume and 80% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_697e8e60_6b25_460d_84c0_40d25b8759b2"></div>
+
+d20
+---
+
+* https://w3id.org/skz/public/ontology#skz_697e8e60_6b25_460d_84c0_40d25b8759b2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 20% of the particle volume and 80% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_7d991a95_3116_4968_8445_42bffcb94bd5"></div>
+
+d30
+---
+
+* https://w3id.org/skz/public/ontology#skz_7d991a95_3116_4968_8445_42bffcb94bd5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 30% of the particle volume and 70% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_845d5557_c4d5_57bc_be81_8780efea88b1"></div>
+
+d30
+---
+
+* https://w3id.org/skz/public/ontology#skz_845d5557_c4d5_57bc_be81_8780efea88b1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 30% of the particle volume and 70% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_6271a8e4_825c_42d8_83d4_b35de8e2e7d9"></div>
+
+d40
+---
+
+* https://w3id.org/skz/public/ontology#skz_6271a8e4_825c_42d8_83d4_b35de8e2e7d9
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 40% of the particle volume and 60% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_9e7e6713_2ec4_57cb_8284_9799a29cf1be"></div>
+
+d40
+---
+
+* https://w3id.org/skz/public/ontology#skz_9e7e6713_2ec4_57cb_8284_9799a29cf1be
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 40% of the particle volume and 60% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_88784b81_1408_5098_a0ba_abd0a6663647"></div>
+
+d50
+---
+
+* https://w3id.org/skz/public/ontology#skz_88784b81_1408_5098_a0ba_abd0a6663647
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 50% of the particle volume and 50% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_29127e9a_f510_4896_8335_f8d5c120db81"></div>
+
+d70
+---
+
+* https://w3id.org/skz/public/ontology#skz_29127e9a_f510_4896_8335_f8d5c120db81
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 70% of the particle volume and 30% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_418f4d87_92bc_5418_8031_9e052fb10206"></div>
+
+d70
+---
+
+* https://w3id.org/skz/public/ontology#skz_418f4d87_92bc_5418_8031_9e052fb10206
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 70% of the particle volume and 30% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_1c281f6a_ac29_4809_931e_7200ed02eea5"></div>
+
+d80
+---
+
+* https://w3id.org/skz/public/ontology#skz_1c281f6a_ac29_4809_931e_7200ed02eea5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 80% of the particle volume and 20% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_3c78a7db_1774_5919_a5ba_941e465db2bc"></div>
+
+d80
+---
+
+* https://w3id.org/skz/public/ontology#skz_3c78a7db_1774_5919_a5ba_941e465db2bc
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 80% of the particle volume and 20% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_a1aba103_42eb_5dde_9c1e_67419c34582f"></div>
+
+d90
+---
+
+* https://w3id.org/skz/public/ontology#skz_a1aba103_42eb_5dde_9c1e_67419c34582f
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 90% of the particle volume and 10% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_24cdd3c7_76c2_4ed6_932f_f3a244890c02"></div>
+
+d99
+---
+
+* https://w3id.org/skz/public/ontology#skz_24cdd3c7_76c2_4ed6_932f_f3a244890c02
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 99% of the particle volume and 1% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_68b4969d_3c32_573a_8d4e_9f0278452d92"></div>
+
+d99
+---
+
+* https://w3id.org/skz/public/ontology#skz_68b4969d_3c32_573a_8d4e_9f0278452d92
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Particles smaller than or equal to this size comprise 99% of the particle volume and 1% are larger</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="skz_15d6fe3e_2110_5b61_abf0_f8d339052eb1"></div>
+
+notizen
+-------
+
+* https://w3id.org/skz/public/ontology#skz_15d6fe3e_2110_5b61_abf0_f8d339052eb1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">information about the measurement - instrument-specific (e.g. that the steady-state was not reached in the measurement time) </td>
+  </tr>
+  </table>
+
+
+
+    
+        
