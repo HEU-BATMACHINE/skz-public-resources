@@ -1,0 +1,1 @@
+# skz-public-resources
