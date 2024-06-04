@@ -1,0 +1,312 @@
+@prefix : <https://w3id.org/skz/public/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/skz/public/ontology#> .
+
+<https://w3id.org/skz/public/ontology> rdf:type owl:Ontology ;
+                                        owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/prefixedunits> ,
+                                                    <https://w3id.org/emmo/domain/electrochemistry/0.12.1-beta/electrochemistry> ;
+                                        dcterms:contributor "SINTEF"@en ,
+                                                            "SINTEF Industry"@en ;
+                                        dcterms:creator "Sridevi Krishnamurthi, Simon Clark"@en ;
+                                        dcterms:title "Slurry measurement(viscosity)-SKZ domain ontology"@en ;
+                                        owl:versionInfo "0.1.0"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/skz/public/ontology#skz_15d6fe3e_2110_5b61_abf0_f8d339052eb1
+:skz_15d6fe3e_2110_5b61_abf0_f8d339052eb1 rdf:type owl:AnnotationProperty ;
+                                          rdfs:comment "information about the measurement - instrument-specific (e.g. that the steady-state was not reached in the measurement time) "@en ;
+                                          skos:prefLabel "notizen"@en ;
+                                          rdfs:subPropertyOf emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo#D20ParticleSize
+emmo:D20ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#D30ParticleSize
+emmo:D30ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#D40ParticleSize
+emmo:D40ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#D70ParticleSize
+emmo:D70ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#D80ParticleSize
+emmo:D80ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#D99ParticleSize
+emmo:D99ParticleSize rdf:type owl:Class .
+
+
+###  https://w3id.org/emmo#SquaremetrePerCubicCentimetre
+emmo:SquaremetrePerCubicCentimetre rdf:type owl:Class .
+
+
+###  https://w3id.org/skz/public/ontology#skz_1601f02c_6573_55ce_b0fb_b12e20997cff
+:skz_1601f02c_6573_55ce_b0fb_b12e20997cff rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:Newton
+                                                          ] ;
+                                          skos:prefLabel "NormalForce"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "normal force F (N):with which the upper plate presses on the sample (with this you can also observe shrinkage - negative sign)"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_1c281f6a_ac29_4809_931e_7200ed02eea5
+:skz_1c281f6a_ac29_4809_931e_7200ed02eea5 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D80ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d80"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 80% of the particle volume and 20% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_24cdd3c7_76c2_4ed6_932f_f3a244890c02
+:skz_24cdd3c7_76c2_4ed6_932f_f3a244890c02 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D99ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d99"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 99% of the particle volume and 1% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_29127e9a_f510_4896_8335_f8d5c120db81
+:skz_29127e9a_f510_4896_8335_f8d5c120db81 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D70ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d70"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 70% of the particle volume and 30% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_2da50370_a54d_5165_8244_6477f389f596
+:skz_2da50370_a54d_5165_8244_6477f389f596 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_3789d3c5_77f4_456e_b7ed_40e670f47e52 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:RadianPerSecond
+                                                          ] ;
+                                          skos:prefLabel "AngularVelocity"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "angular velocity θ'(t) (rad/s):is the rate of change of angular deflection of rotating geometry"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_431878b6_4cce_5998_99af_0978f9d13a93
+:skz_431878b6_4cce_5998_99af_0978f9d13a93 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          rdfs:comment "Determined from volume distribution assuming spheres"@en ;
+                                          skos:altLabel "MA"@en ;
+                                          skos:prefLabel "MeanAreaDiameter"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Medium surface weight particle diameter,Mean value of the area distribution"@en .
+
+
+
+###  https://w3id.org/skz/public/ontology#skz_6271a8e4_825c_42d8_83d4_b35de8e2e7d9
+:skz_6271a8e4_825c_42d8_83d4_b35de8e2e7d9 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D40ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d40"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 40% of the particle volume and 60% are larger"@en .
+
+###  https://w3id.org/skz/public/ontology#skz_697e8e60_6b25_460d_84c0_40d25b8759b2
+:skz_697e8e60_6b25_460d_84c0_40d25b8759b2 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D20ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d20"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 20% of the particle volume and 80% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_6acb304d_62f9_56b8_a39e_5446f68e7184
+:skz_6acb304d_62f9_56b8_a39e_5446f68e7184 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          rdfs:comment "\\bar{x}_{r} = \\int_{x_{\\text{min}}}^{x_{\\text{max}}} q_{r}(x) \\, x \\, dx"@en ;
+                                          skos:altLabel "MV"@en ;
+                                          skos:prefLabel "MeanVolumeDiameter"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Mean Volume Diameter,medium volume weight particle diameter,Mean value of volume distribution"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_7acd20d9_f335_5c31_9346_a4df8e455abb
+:skz_7acd20d9_f335_5c31_9346_a4df8e455abb rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:DegreeCelsius
+                                                          ] ;
+                                          skos:prefLabel "Temperature"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "temperature of the system and sample"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_7d991a95_3116_4968_8445_42bffcb94bd5
+:skz_7d991a95_3116_4968_8445_42bffcb94bd5 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:D30ParticleSize ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d30"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 30% of the particle volume and 70% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_84494825_d879_582e_b1d2_8506e7016a5b
+:skz_84494825_d879_582e_b1d2_8506e7016a5b rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:ReciprocalSecond
+                                                          ] ;
+                                          skos:prefLabel "ShearRate"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "shear rate ɣ̇ (s⁻¹):is the rate at which a progressive shear strain is applied to some material, causing shearing to the material."@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_8561dd93_b147_54a1_9d1c_11348a1b6e12
+:skz_8561dd93_b147_54a1_9d1c_11348a1b6e12 rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d10"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 10% of the particle volume and 90% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_86287ab3_5a17_500d_86b7_0625efce90fa
+:skz_86287ab3_5a17_500d_86b7_0625efce90fa rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_908da3d5_775e_425e_af96_33914618eb66 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:PascalSecond
+                                                          ] ;
+                                          skos:prefLabel "Viscosity"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "viscosity η (Pa∙s):viscosity of a fluid is a measure of its resistance to deformation at a given rate."@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_88784b81_1408_5098_a0ba_abd0a6663647
+:skz_88784b81_1408_5098_a0ba_abd0a6663647 rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d50"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 50% of the particle volume and 50% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_8f82765b_0f13_580c_936d_96154ed4d1c4
+:skz_8f82765b_0f13_580c_936d_96154ed4d1c4 rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:Second
+                                                          ] ;
+                                          skos:prefLabel "Texp"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total time of experiment (include time for equilibration)"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_972a0ccc_bbcf_5b5e_af3c_7c58aaaee450
+:skz_972a0ccc_bbcf_5b5e_af3c_7c58aaaee450 rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:Second
+                                                          ] ;
+                                          skos:prefLabel "T"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "time of experiment"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_a1aba103_42eb_5dde_9c1e_67419c34582f
+:skz_a1aba103_42eb_5dde_9c1e_67419c34582f rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          skos:prefLabel "d90"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Particles smaller than or equal to this size comprise 90% of the particle volume and 10% are larger"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_b187de82_77e1_53c4_acf6_268de3bbc9ce
+:skz_b187de82_77e1_53c4_acf6_268de3bbc9ce rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MicroMetre
+                                                          ] ;
+                                          rdfs:comment "Determined from volume distribution assuming spheres"@en ;
+                                          skos:altLabel "MN"@en ;
+                                          skos:prefLabel "MeanNumberDiameter"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Mean Number Diameter,Medium number of weights particle diameter,Mean value of the number distribution"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_e3dd0ad7_bcce_5ad3_aa66_209b8410079d
+:skz_e3dd0ad7_bcce_5ad3_aa66_209b8410079d rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:Pascal
+                                                          ] ;
+                                          skos:prefLabel "ShearStress"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "shear stress σ (Pa):is defined as shear force divided by shear surface"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_f7904764_0581_5d50_8848_ee5c141d0659
+:skz_f7904764_0581_5d50_8848_ee5c141d0659 rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_aaf9dd7f_0474_40d0_9606_02def8515249 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:NewtonMetre
+                                                          ] ;
+                                          skos:prefLabel "SkzTorque"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Torque τ (N∙m)"@en .
+
+
+###  https://w3id.org/skz/public/ontology#skz_ff44423a_3ab7_50fe_9316_53b12af02e0c
+:skz_ff44423a_3ab7_50fe_9316_53b12af02e0c rdf:type owl:Class ;
+                                          rdfs:subClassOf emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                            owl:someValuesFrom emmo:MilliMetre
+                                                          ] ;
+                                          skos:prefLabel "ShearGap"@en ;
+                                          emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Shear gap g (mm): thickness of the liquid film (distance between two plates)"@en .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
